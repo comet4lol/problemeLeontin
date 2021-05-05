@@ -16,36 +16,27 @@ int main() {
         cout << "arr[" << i << "]=";
         cin >> array[i];
     }
-    int ratieAritmetica = array[1] - array[0];
+    int const ratieAritmetica = array[1] - array[0];
     bool semaforAritmetica = true;
-    int ratieGeometrica = array[1] / array[0];
-    bool semaforGeometrica = false;
-    cout << "Ratiile sunt  :  " << endl;
-    cout << "Aritmetica = " << ratieAritmetica << endl;
-    cout << "Geometrica = " << ratieGeometrica << endl;
-    for ( int i = 0 ; i < n;i++) {
-        if ( array[i+1] - array[i] == ratieAritmetica) {
-            semaforAritmetica = true;
-        }
-            else {
-                semaforAritmetica = false;
+    int const ratieGeometrica = array[1] / array[0];
+    bool semaforGeometrica = true;
+    for ( int i = 0 ; i < n-1;i++) {
+        if ( array[i+1] - array[i] != ratieAritmetica) {
+            semaforAritmetica = false;
         }
     }
     if (semaforAritmetica == false) {
-        for ( int i = 0; i< n; i++) {
-            if ( array[i+1] / array[i] == ratieGeometrica) {
-                 semaforGeometrica = true;
+        for ( int i = 0; i< n-1; i++) {
+            if ( array[i+1] / array[i] != ratieGeometrica) {
+                 semaforGeometrica = false;
             } 
-            else {
-                semaforGeometrica=false;
-            }
         }
     }
     if (semaforAritmetica) { 
         cout << "Vectorul este progresie aritmetica ! ";
     } else if (semaforGeometrica) {
         cout << "Vectorul este progresie geometrica ! ";
-    } else if (semaforAritmetica == false && semaforGeometrica == false) {
-        cout << "Vectorul nu este nici progresie aritmetica , nici progresie geometrica !  ";
+    } else {
+        cout << "Vectorul este nici progresie aritmetica , nici progresie geometrica! ";
     }
 }
