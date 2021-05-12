@@ -1,5 +1,4 @@
-//  Sa se scrie un program care scoata toti elevi la tabla pana ce ii ascultam pe toti.
-//  Fara a asculta un elev de doua ori.
+//  Sa se scrie un program care scoata toti elevi la tabla pana ce ii ascultam pe toti, fara a asculta un elev de doua ori.
 #include <iostream>
 using namespace std;
 
