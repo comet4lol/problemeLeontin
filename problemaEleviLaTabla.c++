@@ -1,19 +1,19 @@
-//  Sa se scrie un program care scoata toti elevi la tabla pana ce ii ascultam pe toti, fara a asculta un elev de doua ori.
+//Scoate toti elevii unei clase la tabla aleatoriu, pana ii ascultam pe toti, fara sa asculti un elev de 2 ori
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int i, n, interval, t , k=0, i=0;
-    cout << "Cati elevi sunt in clasa?  ";
+    int i, n, k=0, T;
+    cout << "Cati elevi sunt in clasa?=";
     cin >> n;
-    int array[n] = {0};
-    do {
-        t = (rand() % n) +1;
-        if (array[t] == 0) {
-            cout <<  "Iese elevul cu numarul : " << t << endl;
-            k++;
-            array[t] = 1; 
-        }
-    } while( k < n);
+    int v[n] = {0};
+    while (k<n) {
+        do {
+            T = rand() % n + 1; 
+        } while(v[T-1] != 0);
+        cout << "L-am scos la tabla pe elevul numarul  " << T << endl; 
+        v[T-1] = 1;
+        k++;
+    }
 }
