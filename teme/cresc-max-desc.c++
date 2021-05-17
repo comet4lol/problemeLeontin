@@ -1,4 +1,4 @@
-//Se citește în Vector cu N componente distincte. Sa se ordoneze pana la maxim crescător și de la maxim descrscator
+//Se citește în Vector cu N componente distincte. Sa se ordoneze pana la maxim crescător și de la maxim descrscator.
 #include <iostream>
 using namespace std;
 
