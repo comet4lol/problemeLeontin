@@ -1,0 +1,40 @@
+Imagineaza-ti o tabla de sah.
+
+grid , etc.
+se acceseaza cam asa:
+
+A[i][j]
+sistem xOy
+
+declarare:
+
+int M,N,i,j
+i-reprezinta rows
+j-reprezinta cols
+
+=> A[10][10]
+
+Citire / generare: 
+
+cout << "Cate linii?";
+cin >> M;
+
+cout << "Cate coloane?";
+cin >> N;
+
+for( i = 0 ; i < m; i++) {
+    for { j = 0 ; j < ; j++) {
+        cout << "A[" << i << "][" << j << "]";
+        cin >> A[i][j];
+    }
+}
+
+Scriere / afisare:
+
+for( i = 0 ; i < m ; i++) {
+    for ( j = 0 ; j < n ; j++) {
+        cout << A[i][j] << " "; 
+    }
+    cout << endl;
+}
+
