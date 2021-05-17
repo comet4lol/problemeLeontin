@@ -1,10 +1,5 @@
- // for (i=n;i>0;i--) {
-    //     array[i] = array[i] + array[i-1];
+ // for ( i = 0 ; i < M ; i++) {
+    //     for ( j = 0 ; j < N ; j++) {
+    //         // if ( i = 0 || i = m-1 )
+    //     }
     // }
-
-    // cout << "[";
-    // for (int i = 0; i < n; i++)
-    // {
-    //     cout << array[i] << " , ";
-    // }
-    // cout << "]" << endl;
