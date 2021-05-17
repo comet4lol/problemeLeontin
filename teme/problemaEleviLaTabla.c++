@@ -1,4 +1,4 @@
-//Scoate toti elevii unei clase la tabla aleatoriu, pana ii ascultam pe toti, fara sa asculti un elev de 2 ori
+//Scoate toti elevii unei clase la tabla aleatoriu, pana ii ascultam pe toti, fara sa asculti un elev de 2 ori.
 #include <iostream>
 using namespace std;
 
