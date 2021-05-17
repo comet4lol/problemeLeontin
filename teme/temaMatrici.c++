@@ -33,10 +33,13 @@ int main() {
     }
     for ( i = 0 ; i < M ; i++) {
         for ( j = 0 ; j < N ; j++) {
-            if ( (i == 0 || i == M-1) || ( j == 0 || j == N-1) ) cout << A[i][j] << "\t";
-              
+            if ( (i == 0 || i == M-1) || ( j == 0 || j == N-1) ) {
+                suma += A[i][j];
+            }
         }
     }
+    cout << endl;
+    cout << "Suma marginilor este egala cu : " << suma << endl;
 
     cout << "A carei linii vrei produsul  ( 0 pana la  " << M  << " ) ?  ";
     cin >> L;
