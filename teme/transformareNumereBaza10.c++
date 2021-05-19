@@ -23,3 +23,34 @@ int main() {
         }
         cout << "\nNumarul tau in baza 10 este egal cu: " << rezultat;
     }
+/* Varianta Sosu
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int bazaInitiala,bazaFinala,p=0,numarFinal=0;
+    int numarInitial;
+
+    cout << "Introdu un numar (fara hex) : ";
+    cin >> numarInitial;
+    cout << endl;
+
+    if (numarInitial >= 0 && numarInitial < 10) {
+        cout << "Numarul este deja in baza 10 !";
+        return 0;
+    }
+    cout << "Baza numarului de mai sus : ";
+    cin >> bazaInitiala;
+    cout << endl;
+
+    while (numarInitial != 0) {
+        numarFinal += ( (numarInitial % 10) * pow(bazaInitiala,p) );
+        numarInitial /= 10;
+        p++;
+    }
+    cout << "Numarul in baza 10 este :  " << numarFinal;
+
+}
+*/
