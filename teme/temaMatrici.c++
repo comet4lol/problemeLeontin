@@ -41,21 +41,21 @@ int main() {
     cout << endl;
     cout << "Suma marginilor este egala cu : " << suma << endl;
 
-    cout << "A carei linii vrei produsul  ( 0 pana la  " << M  << " ) ?  ";
+    cout << "A carei linii vrei produsul  ( 0 pana la  " << M-1  << " ) ?  ";
     cin >> L;
     cout << endl;
 
-    for ( i = 0; i < M ; i++) {
+    for ( i = 0; i <= M ; i++) {
         produsul *= A[L][i];
     } 
     cout << "Produsul este : " << produsul;
     cout << endl;
 
-    cout << "Pe care coloana vrei sa afli numarul de elemente pare  ( 0 pana la  " << N  << " ) ?  ";
+    cout << "Pe care coloana vrei sa afli numarul de elemente pare  ( 0 pana la  " << N-1  << " ) ?  ";
     cin >> C;
     cout << endl;
 
-    for ( j = 0; j < N ; j++) {
+    for ( j = 0; j < M ; j++) {
         if (A[j][C] % 2 == 0) contor++;
     }
     cout << "Numarul de elemente pare este : " << contor;

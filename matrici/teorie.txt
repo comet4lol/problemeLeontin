@@ -38,3 +38,6 @@ for( i = 0 ; i < m ; i++) {
     cout << endl;
 }
 
+Pentru a transforma un numar din baza 10 in baza 2
+se fac impartiri succesive la baza pana se obtine catul 0.
+Dupa care se trec resturile in ordine inversa.
