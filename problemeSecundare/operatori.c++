@@ -2,7 +2,7 @@
 using namespace std;
 /*Operatori Aritmetici
 +,-,/,*, %
-% = modulus
+% = modulus, return rest
 / = div, returneaza catul impartii intregi
 daca unul dintre operanti este real atunci se returneaza se returneaza rezultatul impartirii
 
