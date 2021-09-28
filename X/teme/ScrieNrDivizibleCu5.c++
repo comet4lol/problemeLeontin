@@ -72,7 +72,7 @@ int main()
 i = 0; j = 0;
 cout << "Numerele divizibile cu 5 care se afla doar intr-unul din vectori sunt: ";
 
-while (i < n && j < m)
+while (i <= n && j <= m)
 {
     if (x[i] != y[j])
     {
@@ -82,7 +82,14 @@ while (i < n && j < m)
             {
                 cout << x[i] << " , ";
             }
-            i++;
+            if (i < n)
+            {
+                i++;
+            }
+            else
+            {
+                j++;
+            }
         }
         else
         {
@@ -90,7 +97,11 @@ while (i < n && j < m)
             {
                 cout << y[j] << " , ";
             }
-            j++;
+            if (j < m)
+            {
+                j++;
+            }
+            else {i++;}
         }
     } else
     {
