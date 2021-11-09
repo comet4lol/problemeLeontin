@@ -33,7 +33,7 @@ int main ()
        j = m;
        do {
            A[i][j] = v[S];
-            S++;
+           S++;
            i--;
            j++;
        } while (j <= k && S < n*n);
