@@ -41,7 +41,7 @@ int main()
                 case 3: {
                    if ( k > -1) {
                        k--;
-                       cout << "Am sters." << endl;
+                       cout << "L-am sters pe " << V[k+1] << endl;
                    } else cout << "Nu sunt elemente! " << endl;
                     break;
                 }

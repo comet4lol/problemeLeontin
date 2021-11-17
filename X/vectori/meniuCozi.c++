@@ -38,13 +38,11 @@ int main()
                 }
                 case 3: {
                     if ( k > -1) {
+                        cout << "L-am sters pe " << V[0] << endl;
                         k--;
                        for ( int i = 0 ; i  <= k ; i++) {
                                 V[i] = V[i+1];
                        }
-                        cout << "Am sters" << endl;
-                    } else cout << "Nu sunt elemente! " << endl;
-                
                     } else cout << "Nu sunt elemente! " << endl;
                     break;
                 }
