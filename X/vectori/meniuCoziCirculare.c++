@@ -76,7 +76,7 @@ int main()
             }
         } 
 
-    } else cout << "ce ne sera pas possible :(";
+    } else cout << "Nu se poate :(";
     
     return 0;
 }
