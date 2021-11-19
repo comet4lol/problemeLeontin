@@ -29,7 +29,8 @@ int i_prim(int n)
             break;
         p2++;
     }
-    cout << "Diferenta = " << (p2-p1) << endl << "P1 = " << p1 << endl << "P2 = " << p2;
+    cout << "Diferenta = " << (p2-p1) << "\nP1 = " << p1 << "\nP2 = " << p2;
+    return 0;
 }
 
 int main() {
