@@ -11,7 +11,8 @@ int main() {
     cout << "[";
     for (int i = 0; i < n; i++)
     {
-        v[i] = (rand() % interval) - (interval / 2);
+        v[i] = (rand() % interval) - (interval / 2); // aici va fi si cu minus si cu plus
+        //v[i] = rand() % interval; // aici va fi doar cu plus
         cout << v[i] << " , ";
     }
     cout << "]" << endl;
