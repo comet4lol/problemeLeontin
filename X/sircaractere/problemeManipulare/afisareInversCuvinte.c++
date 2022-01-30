@@ -14,4 +14,4 @@ int main()
         cuvant = strtok(NULL, " ");
     }
     return 0;
-}
+} // credits: sile camataru
