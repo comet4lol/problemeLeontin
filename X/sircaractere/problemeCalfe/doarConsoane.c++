@@ -33,7 +33,6 @@ int main() {
         return 0;
     } // uite pana aici bre
 
-    // cout << "Debug : " << endl << "Semafor consoane: " << semaforConsoane << endl << "Contine i: " << contineI << endl;
     if (semaforConsoane) {
             cout << "Da";
     } else cout << "Nu";
