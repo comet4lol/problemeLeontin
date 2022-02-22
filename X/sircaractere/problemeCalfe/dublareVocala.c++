@@ -12,8 +12,8 @@ int main () {
     while (i < strlen(sir)) {
         if (strchr("aeiou", sir[i]) != NULL) {
             strcpy(t , sir + i);
-            strcpy(sir + i + 1 , t);
-            i++;
+            strcpy(sir + i - 1 , t);
+            i--;
         }
         i++;
     }
