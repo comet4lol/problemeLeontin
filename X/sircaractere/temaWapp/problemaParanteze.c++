@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+    // Se citeste un sir format din paranteze, sa se determine daca se deschid/inchid corect.
     char text[100],aux[100];
     cout << "Introdu textul : ";
     cin.getline(text,100);
