@@ -1,5 +1,4 @@
-// sa se umple sirul lui fibonacci cu primii m*n termeni din sirul lui fibonacci
-
+// Sirul lui Fibonacci matrice patrata
 #include <iostream>
 #include <iomanip>
 
@@ -7,34 +6,27 @@ using namespace std;
 
 int main()
 {
-    int i, j, M, N, x, y;
+    int n, x, y;
 
-    cout << "Cate linii?  ";
-    cin >> M;
+    cout << "Introdu-l pe N: ";
+    cin >> n;
     cout << endl;
 
-    cout << "Cate coloane?  ";
-    cin >> N;
-    cout << endl;
-
-    int A[M][N];
+    int A[n][n];
     x=1;
     y=0;
-    for (i = 0; i < M; i++)
-    {
-        for (j = 0; j < N; j++)
+
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
         {
             A[i][j] = x+y;
             x = y;
             y = A[i][j];
-            // cin >> A[i][j];
         }
-    }
-    for (i = 0; i < M; i++)
-    {
-        for (j = 0; j < N; j++)
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++)
         {
-            cout << setw(3) << A[i][j] << "  ";
+            cout << setw(5) << A[i][j] << "  ";
         }
         cout << "\n \n";
     }
