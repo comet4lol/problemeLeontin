@@ -14,9 +14,9 @@ int main ()
 {
     int n,i,j,k,m,val1,val2;
     bool sem;
-    cout << "Introdu numarul de coloane N=";
+    cout << "N=";
     cin >> n;
-    cout << "Introdu numarul de linii M=";
+    cout << "M=";
     cin >> m;
     int A[m][n];
 
