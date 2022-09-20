@@ -12,7 +12,7 @@ using namespace std;
 int main ()
 
 {
-    int n,i,j,k,m,val1,val2;
+    int n,i,j,k,m;
     bool sem;
     cout << "N=";
     cin >> n;
@@ -24,27 +24,17 @@ int main ()
     {
         for (j = 0; j < n; j++)
         {
-            //A[i][j] = rand() % 100; 
             cout << "A[" << i << "][" << j << "]=";
             cin >> A[i][j];
-            //cout << setw(3) << A[i][j] << " ";
         }
-    //cout << endl;
     }
 
     for (i = 0; i < m-1; i++) {
         for (k = i+1; k < m; k++) {
             sem = 1;
-
-            if (A[i][0] > A[k][0]) val1 = (A[i][0] / A[k][0]) + (A[i][0] % A[k][0]);
-            else val1 = (A[k][0] / A[i][0]) + (A[k][0] % A[i][0]);
-
             for (j = 1; j < n && sem; j++) {
 
-            if (A[i][j] > A[k][j]) val2 = A[i][j] / A[k][j] + A[i][j] % A[k][j];
-            else val2 = A[k][j] / A[i][j] + A[k][j] % A[i][j];
-
-               if (val1 != val2) sem = 0;
+               if ((float) A[i][0] / A[k][0] != (float) A[i][j] / A[k][j]) sem = 0;
             }
             if (sem) cout << i << "," << k << endl;
         }
