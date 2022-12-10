@@ -2,8 +2,6 @@
 #include <fstream>
 using namespace std;
 
-int X[20];
-
 void elim (int A[20][20], int L, int N) {
     for (int i = L; i <= N; i++) {
         for (int j = 0; j <= N; j++) {
