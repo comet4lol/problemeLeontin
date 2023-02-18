@@ -41,7 +41,7 @@ int main()
     while (k > 0) {
         do {succesor();
         if (AS) valid();
-        } while(!((!AS)||(AS==EV)));
+        } while (AS && AS != EV); //while(!((!AS)||(AS==EV))); - mult mai simplu
             if (AS)
                 if (solutie()) tipar();
                 else {k++; init();}
